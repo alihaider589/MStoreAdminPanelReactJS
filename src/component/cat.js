@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import Additem from "./Items/Additem";
 import Edititems from "./Items/Edititems";
-class Items extends Component {
+
+
+class Categories extends Component {
 
 constructor(props){
     super(props);
@@ -29,8 +31,8 @@ closeform=()=>{
                     { this.state.edititems ? <Edititems id={this.state.id}  close={this.closeform}/> :''}
                     <section className="content-header">
                         <h1>
-                            Data Tables
-                            <small>advanced tables</small>
+                            User Tables
+                            <small>Advance User  tables</small>
                         </h1>
 
                     </section>
@@ -87,4 +89,4 @@ closeform=()=>{
     }
 }
 
-export default Items;
+export default Categories;

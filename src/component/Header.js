@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import firebase from './Firebase'
 class Header extends Component {
     render() {
         return (
@@ -10,7 +9,7 @@ class Header extends Component {
 
                         <span className="logo-mini"><b>A</b>LT</span>
 
-                        <span className="logo-lg"><b>Admin</b>LTE</span>
+                        <span className="logo-lg"><b>Woo Commerce Admin</b>Panel</span>
                     </a>
 
 
@@ -25,12 +24,7 @@ class Header extends Component {
                                         <li>
                                             <div className="pull-right">
                                                 <button onClick={()=>{
-                                                    console.log('logout');
-                                                    firebase.auth().signOut().then((e)=>{
-                                                        console.log(e);
-                                                    }).then((e)=>{
-                                                        console.log(e);
-                                                    });
+                                                    
                                                 }} className="btn btn-primary"><i className={'fas fa-sign-out-alt'}   /> Sign out</button>
                                             </div>
                                         </li>

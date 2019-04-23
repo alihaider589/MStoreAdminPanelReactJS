@@ -43,6 +43,16 @@ class Menu extends Component {
                                     </span>
                                 </a>
                             </li>
+                            
+                            <li  >
+                                    <a  onClick={this.props.changePage5}  style={{cursor:'pointer'}} >
+                                        <i className="fa fa-users"></i> <span>Cat</span>
+                                        <span className="pull-right-container">
+
+                                    </span>
+                                    </a>
+
+                            </li>
                         </ul>
                     </section>
 
